@@ -1,0 +1,6 @@
+{
+  "name": "JSSP Control — Asistencia QR y Comisiones Art. 22",
+  "description": "Sistema de marcación de asistencia vía QR sincronizado con Supabase en tiempo real, notificaciones por correo, reportes automáticos de puntualidad en PDF y cálculo de comisiones por metas de venta para trabajadores Artículo 22.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
