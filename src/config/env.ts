@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import crypto from 'node:crypto';
 
 const runtimeQrSecret = crypto.randomBytes(32).toString('hex');

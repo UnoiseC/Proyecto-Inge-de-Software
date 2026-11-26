@@ -286,7 +286,7 @@ export function createApiRouter(
     asyncHandler(async (req: Request, res: Response) => {
       const idTrabajador = String(req.params.id).trim().toUpperCase();
       const worker = await repo.getTrabajadorById(idTrabajador);
-      if (worker.modalidad === 'ART22') {
+      if (!worker.presencial && worker.modalidad === 'ART22') {
         throw new ApiError(
           400,
           `El trabajador ${idTrabajador} está bajo Artículo 22 y no utiliza credencial QR de marcación.`
